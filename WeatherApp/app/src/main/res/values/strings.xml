@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Group_F22_HW03</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="temperature">Temperature</string>
+    <string name="temp_max">Temperature Max</string>
+    <string name="temp_min">Temperature Min</string>
+    <string name="desc">Description</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind_spd">Wind Speed</string>
+    <string name="wind_deg">Wind Degree</string>
+    <string name="cloudiness">Cloudiness</string>
+    <string name="check_forecast">Check Forecast</string>
+    <string name="weather_forecast">Weather Forecast</string>
+    <string name="current_weather">Current Weather</string>
+    <string name="cities">Cities</string>
+
+</resources>

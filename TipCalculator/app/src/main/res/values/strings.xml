@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">InClass02_GroupA1</string>
+    <string name="calculate">Calculate</string>
+    <string name="discount">Discount:</string>
+    <string name="discountedPrice">Discounted Price:</string>
+    <string name="ticketPrice">Ticket Price:</string>
+    <string name="enterTicketPrice">Enter Ticket Price</string>
+    <string name="discountedPriceValue">Discounted Price Value</string>
+    <string name="clear">Clear</string>
+    <string name="toastMsg">The input number should be a valid positive number</string>
+</resources>

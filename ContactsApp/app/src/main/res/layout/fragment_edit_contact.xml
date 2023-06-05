@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayoutEdit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditContactFragment">
+
+    <TextView
+        android:id="@+id/textViewNameEdit"
+        android:layout_width="0dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewEmailEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTypeEdit"
+        app:layout_constraintStart_toStartOf="@+id/textViewTypeEdit"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTypeEdit" />
+
+    <TextView
+        android:id="@+id/textViewNumberEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/textViewEmailEdit"
+        app:layout_constraintStart_toStartOf="@+id/textViewEmailEdit"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmailEdit" />
+
+    <TextView
+        android:id="@+id/textViewTypeEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/textViewNameEdit"
+        app:layout_constraintStart_toStartOf="@+id/textViewNameEdit"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNameEdit" />
+
+    <TextView
+        android:id="@+id/textViewIDEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/textViewNumberEdit"
+        app:layout_constraintStart_toStartOf="@+id/textViewNumberEdit"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNumberEdit" />
+
+    <EditText
+        android:id="@+id/editTextEditName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textViewIDEdit"
+        app:layout_constraintStart_toStartOf="@+id/textViewIDEdit"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIDEdit" />
+
+    <EditText
+        android:id="@+id/editTextEditEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/editTextEditName"
+        app:layout_constraintStart_toStartOf="@+id/editTextEditName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEditName" />
+
+    <EditText
+        android:id="@+id/editTextEditPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/phone_num"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/editTextEditEmail"
+        app:layout_constraintStart_toStartOf="@+id/editTextEditEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEditEmail" />
+
+    <EditText
+        android:id="@+id/EditTextEditType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/phone_type"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextEditPhone"
+        app:layout_constraintStart_toStartOf="@+id/editTextEditPhone"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEditPhone" />
+
+    <EditText
+        android:id="@+id/editTextEditId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/id"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/EditTextEditType"
+        app:layout_constraintStart_toStartOf="@+id/EditTextEditType"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextEditType" />
+
+    <Button
+        android:id="@+id/buttonCancelEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/cancel"
+        app:layout_constraintStart_toStartOf="@+id/editTextEditId"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEditId" />
+
+    <Button
+        android:id="@+id/buttonEditUpdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/update"
+        app:layout_constraintEnd_toEndOf="@+id/editTextEditId"
+        app:layout_constraintStart_toEndOf="@+id/buttonCancelEdit"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEditId" />
+</androidx.constraintlayout.widget.ConstraintLayout>
